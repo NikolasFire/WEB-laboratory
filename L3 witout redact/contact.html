@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/contact.js"></script>
+</head>
+
+<body name="contact">
+    <nav>
+        <div class="menu">
+            <ul>
+                <li class = "unactive">
+                    <a href = "index.html" onmouseout="IconTextSwap(this, 'Главная');" onmouseover="TextIconSwap(this,'/img/index_icon.png');">Главная</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "aboutme.html" onmouseout="IconTextSwap(this, 'Обо мне');" onmouseover="TextIconSwap(this,'/img/aboutme_icon.png');">Обо мне</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "interes.html" onmouseout="IconTextSwap(this, 'Мои интересы');" onmouseover="TextIconSwap(this,'/img/interes_icon.png');">Мои интересы</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "study.html" onmouseout="IconTextSwap(this, 'Образование');" onmouseover="TextIconSwap(this,'/img/study_icon.png');">Образование</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "album.html" onmouseout="IconTextSwap(this, 'Фотоальбом');" onmouseover="TextIconSwap(this,'/img/album_icon.png');">Фотоальбом</a>
+                </li>
+                <li class = "active">
+                    <a href = "contact.html" onmouseout="IconTextSwap(this, 'Контакт');" onmouseover="TextIconSwap(this,'/img/contact_icon.png');">Контакт</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="content">
+        <div>
+            <h1 class="header">ОБРАТНАЯ СВЯЗЬ</h1>
+            <br><br>
+            <form class="container_contact" name="contact_form">
+                <fieldset>
+                    <h3 class="contact-text">Требуется ввести ваши данные</h3>
+                    <div>
+                        <label>ФИО  <input type="text" name="fio" id = "fio" maxlength="30" size="30"></label>
+                        <p id="demo1" ></p>
+                    </div>
+                    <div>
+                        <label>Номер телефона <input type="text" name="phone" id="phone" required maxlength="12" size="16"></label>
+                        <p id="demo2" ></p>
+                    </div>
+                    <div>
+                        <label> Пол
+                            <input type="radio" name="sex" required id="sex" value="Мужской"> Мужской
+                            <input type="radio" name="sex" required id="sex" value="Женский"> Женский
+                        </label>
+                    </div><br>
+                    <div>
+                        <label for="age" > Возраст </label>
+                        <input class="input" name="age" required type="number">
+                        <p id="demo3"> </p>
+                    </div>
+                <br>
+    
+                    <div>
+                        <label>E-Mail <input type="email" name="email" required id="email" size="30"></label>
+                        <p id="demo4"></p>
+                    </div><br>
+                    <div>
+                        <input type="submit" value="Отправить">
+                        <input type="reset" value="Очистить">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <script src="scripts/menupics.js"></script>
+</body>
+
+</html>

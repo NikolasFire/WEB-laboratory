@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>mainpage</title>
+    <link rel="stylesheet" type = "text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One:regular" rel="stylesheet" />
+</head>
+<body name="index">
+    <nav>
+        <div class="menu">
+            <ul>
+                <li class = "active">
+                    <a href = "index.html" onmouseout="IconTextSwap(this, 'Главная');" onmouseover="TextIconSwap(this,'/img/index_icon.png');">Главная</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "aboutme.html" onmouseout="IconTextSwap(this, 'Обо мне');" onmouseover="TextIconSwap(this,'/img/aboutme_icon.png');">Обо мне</a>
+                </li>
+                <li class = "unactive">
+                    <!-- <a href = "interes.html" onmouseout="IconTextSwap(this, 'Мои интересы');" onmouseover="TextIconSwap(this,'/img/interes_icon.png');">Мои интересы</a> -->
+                    <div class="dropdown__menu" id="dropdown">
+                        <a id="dropbtn" href="/interes.html" onmouseout="IconTextSwap(this, 'Мои интересы');" onmouseover="dropMenu()" onmouseover="TextIconSwap(this,'/img/interes_icon.png');">Мои интересы</a>
+                        <ul id="myDropdown" class="dropdown-content">
+                            <li><a href="interes.html#films">Фильмы</a></li>
+                            <li><a href="interes.html#books">Книги</a></li>
+                            <li><a href="interes.html#bgames">Настольные игры</a></li>
+                            <li><a href="interes.html#music">Музыка</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class = "unactive">
+                    <a href = "study.html" onmouseout="IconTextSwap(this, 'Образование');" onmouseover="TextIconSwap(this,'/img/study_icon.png');">Образование</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "album.html" onmouseout="IconTextSwap(this, 'Фотоальбом');" onmouseover="TextIconSwap(this,'/img/album_icon.png');">Фотоальбом</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "contact.html" onmouseout="IconTextSwap(this, 'Контакт');" onmouseover="TextIconSwap(this,'/img/contact_icon.png');">Контакт</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="content">
+        <div> 
+            <h1 class = "header"><p>Hello, hello</p><p>I'm at a place called Vertigo</p></h1>
+            <p class = "istud">Я студент и этот сайт - моя лабораторная работа</p>
+            <hr>
+            <div class = "topinfo">
+                <div class = "col-text1">
+                    <hr>
+                    <h3 class = "header">IT'S ME MARIO!</h3>
+                    <hr>
+                </div>
+                <div class = "col-img">
+                    <img class = "roundimg" src="/img/myface.jpg" alt=""> 
+                </div>
+                <div class = "col-text2">
+                    <h3 class = "header">Хто я?</h3> 
+                    <p class = "infome">
+                        <strong>Имя:</strong>
+                        <br>
+                         Подгорный Николай Алексеевич
+                        <br>
+                        <strong>Возраст:</strong>
+                        <br>
+                         18 лет
+                        <br>
+                        <strong>Группа:</strong>
+                        <br>
+                         ИС/б-19-2-о
+                    </p>
+                </div>
+            </div>
+            <div class = "block-center">
+                <img class = "gifkaM" src="/img/smg4-mario.gif">
+            </div>
+        </div>
+    </section>
+    <script src="scripts/menupics.js"></script>
+    <script src="scripts/dropdown.js"></script>
+</body>
+</html>

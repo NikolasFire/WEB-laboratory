@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" type = "text/css" href="css/style.css">
+    <script src="scripts/test.js"></script>
+</head>
+<body name="test">
+    <nav>
+        <div class="menu">
+            <ul>
+                <li class = "unactive">
+                    <a href = "index.html" onmouseout="IconTextSwap(this, 'Главная');" onmouseover="TextIconSwap(this,'/img/index_icon.png');">Главная</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "aboutme.html" onmouseout="IconTextSwap(this, 'Обо мне');" onmouseover="TextIconSwap(this,'/img/aboutme_icon.png');">Обо мне</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "interes.html" onmouseout="IconTextSwap(this, 'Мои интересы');" onmouseover="TextIconSwap(this,'/img/interes_icon.png');">Мои интересы</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "study.html" onmouseout="IconTextSwap(this, 'Образование');" onmouseover="TextIconSwap(this,'/img/study_icon.png');">Образование</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "album.html" onmouseout="IconTextSwap(this, 'Фотоальбом');" onmouseover="TextIconSwap(this,'/img/album_icon.png');">Фотоальбом</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "contact.html" onmouseout="IconTextSwap(this, 'Контакт');" onmouseover="TextIconSwap(this,'/img/contact_icon.png');">Контакт</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="content">
+        <div> 
+            <h1 class = "header">Тест по Физике</h1>
+            <br>
+            <form name="test_form">
+                <h3 class = "contact-text">Что измеряется в Ньютонах?</h3>
+                    <textarea name="ans1" cols="20" rows="1" required></textarea>
+                <br><br><br>
+                <h3 class = "contact-text"> Действующие значения переменного тока отличаются от амплитудных в: </h3>
+                <input name="ans2" required type="radio" value=1><label><span>&#8730;</span>2 раз</label>
+                <input name="ans2" required type="radio" value=2><label>2</label>
+                <br><br><br>
+                <h3 class = "contact-text">Что изучает физика?</h3>
+                <select name="answer" size=3 onchange="SelectChanged(this)" required>
+                    <option>Божий замысел</option>
+                    <option>Движение материи и законы природы</option>
+                    <option>Состав на пачке доширака</option>
+                </select>
+                <p></p>
+                <input type="submit" onclick="CheckAnswers()">
+                <input type="reset">
+            </form>
+        </div>
+    </section>
+    <script src="scripts/menupics.js"></script>
+</body>
+</html>

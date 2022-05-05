@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>albumalbum</title>
+    <link rel="stylesheet" type = "text/css" href="css/style.css">
+</head>
+<body name="album">
+    <nav>
+        <div class="menu">
+            <ul>
+                <li class = "unactive">
+                    <a href = "index.html" onmouseout="IconTextSwap(this, 'Главная');" onmouseover="TextIconSwap(this,'/img/index_icon.png');">Главная</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "aboutme.html" onmouseout="IconTextSwap(this, 'Обо мне');" onmouseover="TextIconSwap(this,'/img/aboutme_icon.png');">Обо мне</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "interes.html" onmouseout="IconTextSwap(this, 'Мои интересы');" onmouseover="TextIconSwap(this,'/img/interes_icon.png');">Мои интересы</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "study.html" onmouseout="IconTextSwap(this, 'Образование');" onmouseover="TextIconSwap(this,'/img/study_icon.png');">Образование</a>
+                </li>
+                <li class = "active">
+                    <a href = "album.html" onmouseout="IconTextSwap(this, 'Фотоальбом');" onmouseover="TextIconSwap(this,'/img/album_icon.png');">Фотоальбом</a>
+                </li>
+                <li class = "unactive">
+                    <a href = "contact.html" onmouseout="IconTextSwap(this, 'Контакт');" onmouseover="TextIconSwap(this,'/img/contact_icon.png');">Контакт</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="content">
+        <div>
+            <h1 class = "header">ФОТОАЛЬБОМ</h1>
+            <br>
+            <div id=album class=album>
+                <script src="scripts/album.js"></script>
+            </div>
+        </div>
+        <script src="scripts/menupics.js"></script>
+</body>
+</html>
